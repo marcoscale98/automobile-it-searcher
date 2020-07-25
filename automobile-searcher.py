@@ -90,8 +90,8 @@ def run_query(url, name):
         page = requests.get(url)
         soup = BeautifulSoup(page.text, 'html.parser')
         product_list_items = soup \
-            .find('div', class_='jsx-3810883459 Container') \
-            .find('div', class_='jsx-3810883459 Container__Right') \
+            .find('div', class_='jsx-2796484233 jsx-3810883459 Container') \
+            .find('div', class_='jsx-2796484233 jsx-3810883459 Container__Right') \
             .find('div', class_='jsx-1584082732 jsx-673266420 Contents') \
             .find_all('div', class_='jsx-3462268742 Card')
         # print(product_list_items[0])
